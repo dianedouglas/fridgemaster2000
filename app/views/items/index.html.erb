@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Supply lasts until</th>
-      <th colspan="3"></th>
+      <th>Stocked up for...</th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
@@ -16,9 +16,8 @@
       <tr>
         <td><%= item.name %></td>
         <td><%= item.supply_lasts_until %></td>
-        <td><%= link_to 'Show', item %></td>
-        <td><%= link_to 'Edit', edit_item_path(item) %></td>
-        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Update', edit_item_path(item) %></td>
+        <td><%= link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
